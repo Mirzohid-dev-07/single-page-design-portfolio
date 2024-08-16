@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: var(--White);
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+:root {
+    --Galactic-Blue: #755CDE;
+    --Summer-Yellow: #F6A560;
+    --Pink: #F39E9E;
+    --Light-Red: #EB7565;
+    --Cyan: #61C4B7;
+    --Purple: #552049;
+    --Black: #030303;
+    --Medium-Brown: #7A746E;
+    --Light-Cream: #FFF7F0;
+    --White: #fff;
+}
+
+.btn1 {
+    display: block;
+    padding: 14px 45px;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--Light-Cream);
+    background-color: var(--Black);
+    border-radius: 28px;
+    width: max-content;
+    transition: 0.4s;
+}
+
+.btn1:hover {
+    background-color: var(--Galactic-Blue);
+    cursor: pointer;
+}
+
+.btn2 {
+    display: block;
+    padding: 14px 45px;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--Light-Cream);
+    background-color: var(--Light-Red);
+    border-radius: 28px;
+    width: max-content;
+    transition: 0.4s;
+}
+
+.btn2:hover {
+    background-color: var(--Summer-Yellow);
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    background-color: var(--Light-Cream);
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header {
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+.title {
+    font-family: "Plus Jakarta Sans";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--Black);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    margin-top: 70px;
+}
+
+.paragraph {
+    max-width: 730px;
+    width: 100%;
+    color: var(--Medium-Brown);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 23px;
+}
+
+.site-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-hero__grid {
+    max-width: 1110px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "gd gd ui apps ph ph"
+        "gd gd ill ill mg mg"
+    ;
+
+    gap: 24px;
+    margin-top: 80px;
+}
+
+.item {
+    min-height: 182px;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gd {
+    width: 354px;
+    background-color: var(--Galactic-Blue);
+    grid-area: gd;
+}
+
+.gd-image {
+    width: 128px;
+    height: 192px;
+    flex-shrink: 0;
+}
+
+.ui {
+    width: 164px;
+    background-color: var(--Summer-Yellow);
+    grid-area: ui;
+}
+
+.ui-image {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.apps {
+    width: 164px;
+    background-color: var(--Pink);
+    grid-area: apps;
+}
+
+.apps-image {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.photo {
+    width: 354px;
+    background-color: var(--Cyan);
+    grid-area: ph;
+}
+
+.photo-image {
+    width: 160px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.illus {
+    width: 354px;
+    background-color: var(--Light-Red);
+    grid-area: ill;
+}
+
+.illus-image {
+    width: 128px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.mg {
+    width: 354px;
+    background-color: var(--Purple);
+    grid-area: mg;
+}
+
+.mg-image {
+    width: 128px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.aboutme {
+    margin-top: 136px;
+    display: flex;
+    align-items: center;
+}
+
+.girl {
+    width: 410px;
+    height: 425px;
+    flex-shrink: 0;
+    margin-left: 165px;
+}
+
+.DataAboutGirl {
+    display: flex;
+    flex-direction: column;
+    margin-left: 125px;
+}
+
+.aboutgirl {
+    max-width: 540px;
+    width: 100%;
+    color: var(--Black, #030303);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.moreaboutgirl {
+    max-width: 540px;
+    width: 100%;
+    color: var(--Medium-Brown, #7A746E);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 34px;
+    margin-bottom: 32px;
+}
+
+.MyWork {
+    color: var(--Black, #030303);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 88px;
+}
+
+.MyWork-images {
+    gap: 30px;
+    display: flex;
+    margin-top: 56px;
+}
+
+.scroller-image {
+    margin-top: 56px;
+    margin-left: 620px;
+}
+
+.footer-book-consultation {
+    max-width: 1110px;
+    width: 100%;
+    background-color: var(--Black);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 182px;
+    margin-top: 88px;
+}
+
+.footer-book {
+    margin-left: 65px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title2 {
+    max-width: 540px;
+    width: 100%;
+    color: var(--Light-Cream, #FFF7F0);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.desc {
+    max-width: 540px;
+    width: 100%;
+    color: var(--Light-Cream, #FFF7F0);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.site-footer {
+    margin-top: 56px;
+    margin-left: 165px;
+    margin-right: 165px;
+}
